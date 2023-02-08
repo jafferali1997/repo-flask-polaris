@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify
-import cv2
 import pytesseract
 from PyPDF2 import PdfReader
 import openai
@@ -32,9 +31,7 @@ def index():
         
         img = request.get_json(force=True)['image']
         
-        
         # ...
-
         # OCR the image
         text = pytesseract.image_to_string(img)
 
