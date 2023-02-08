@@ -124,6 +124,8 @@ def index():
                 break
 
         return jsonify(clauses=list2, result=FINAL_RESULT, S_O=summary_output, S_A=Summary_Analyse,Summary_Text1=Summary_Text1, zip=zip_longest)
+    
+    return jsonify()
 
 
 
