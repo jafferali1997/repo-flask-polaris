@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 import pytesseract
-from PyPDF2 import PdfReader
+# from PyPDF2 import PdfReaderk
 import openai
 from itertools import zip_longest
 
