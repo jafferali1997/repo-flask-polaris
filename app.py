@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, jsonify
+from flask import Flask, request, jsonify
 import cv2
 import pytesseract
 from PyPDF2 import PdfReader
@@ -141,8 +141,8 @@ def gpt3(stext):
     #print(content)
     return response.choices[0].text
 
-@app.route("/pdf", methods=["GET", "POST"])
-def check():
+# @app.route("/pdf", methods=["GET", "POST"])
+# def check():
     if request.method == "POST":
         file = request.files["pdf_file"]
         
