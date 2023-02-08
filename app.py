@@ -176,5 +176,5 @@ def check():
 
         return render_template('index.html',summarizing_pdf=summarizing_pdf, Text3=Text3)
     return render_template('index.html')
-if _name_ == '__main__':
-    app.run(debug=True)
+# if _name_ == '__main__':
+#     app.run(debug=True)
